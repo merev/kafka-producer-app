@@ -2,12 +2,12 @@ from kafka import KafkaProducer
 from time import sleep
 from random import randrange
 
-tpk = ['demo4']
+tpk = ['demo']
 idx = 1
 print('Producer started. Press Ctrl+C to stop. Working on topic=' + str(tpk))
 
 try:
-    producer = KafkaProducer(bootstrap_servers=['broker:9092'])
+    producer = KafkaProducer(bootstrap_servers=['broker:29092'])
     while True:
         st = 'My number is ' + str(idx)
         print('message: ' + st)
